@@ -10,7 +10,7 @@ function draw() {
   background(125);
   ellipse(x, height/2, 40)
   x += speed;
-  if(x >= 400) {
+  if(x >= 400 || x<=0) {
     speed = speed * -1;
   }
 
