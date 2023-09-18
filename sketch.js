@@ -1,22 +1,34 @@
-let x = 100;
-let speed = 1; 
-let diameter = 40;
+let bgcolor;
+
 
 function setup() {
   createCanvas(400, 400);
+  bgcolor = color(255,0,100)
 }
 
 function draw() {
-  background(125);
-  ellipse(x, height/2, 40)
-  x += speed;
-  if(x >= 400 || x<=0) {
-    speed = speed * -1;
-  }
+  background(bgcolor);
 
-  
+
+  // push();
+// translate(40,40);
+//rorate(45)
+//rect(0,0,20,20)
+//pop();
+
+//let color = map(mouseY, 0, height, 0,255);
+//let color = random(0, 255)
+
+//fill(random(255), random(255), random(255));
+
+rect(mouseX, 100, 50, 50)
 }
 
-//framecount makes a number grow by 1 every frame
-// xPosition = xPosition + 1; controls speed and starting point
-// x += speed is the same as x = x + speed
+function mouseClicked() {
+// if(bgcolor == "orange"){
+//   bgcolor = "black";
+// } else {
+//   bgcolor = "orange"
+// }
+  bgcolor = "black"
+}
